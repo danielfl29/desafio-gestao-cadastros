@@ -46,6 +46,10 @@ header {
     cursor: pointer;
 }
 
+.button:hover, :focus {
+    box-shadow: 0 2px #131d27;
+}
+
 /* Cadastro */
 
 .container-cadastro {
