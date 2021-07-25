@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
+/* CSS Document */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f0f1eb;
+    font-family: 'Archivo', sans-serif;
+}
+
+header {
+    background-color: #131d27;
+    height: 80px;
+    color: #f0f1eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-buttons {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 30px;
+    padding: 12px 21px;
+    background-color: #5a9ece;
+    color: #131d27;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.2s;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: fit-content;
+    cursor: pointer;
+}
+
+/* Cadastro */
+
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+}
+
+/* Forms */
+
+form#formulario {
+    margin: 0px 15px;
+    color: #131d27;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.form-campos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.input {
+    border: 1px solid #131d27;
+    border-radius: 5px;
+    outline-width: 0;
+    height: 25px;
+    padding-left: 8px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.input:hover, :focus {
+    box-shadow: 0 1px #131d27;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Table */
+
+.container-cadastro table {
+    margin: 40px 20px;
+    color: #131d27;
+    border: none
+}
+
+.container-cadastro table td, th {
+    width: 20%;
+}
+
+.container-cadastro table thead {
+    background-color: #131d27;
+}
+
+.container-cadastro table thead tr th {
+    font-weight: bold;
+    color: #f0f1eb;
+}
+
+.container-cadastro table tbody {
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+/* Footer */
+
+footer {
+    display: flexbox;
+    align-content: center;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 13px;
+}
+
+.git {
+    background: none;
+    margin: 2px;
+}
+
+.linkedin {
+    background: none;
+    margin: 2px;
+}

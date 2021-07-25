@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gestão de Cadastros</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Cadastro de Produtos
+            <i class="produtos"></i>
+        </h1>
+    </header>
+    <main class="container-cadastro">
+        <form action="#" method="post" id="formulario">
+            <div class="form-campos">
+                <div class="label-input">
+                    <label for="categoria">Categoria</label>
+                    <input type="text" name="categoria" id="categoria" placeholder="ex: Livro" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="ex: Schindler" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="marca">Marca</label>
+                    <input type="text" name="marca" id="marca" placeholder="ex: Taschen" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="quantidade">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" value="1" min="1" class="input" required />
+                </div>
+            </div>
+            <input type="submit" class="button" value="Cadastrar Produto" />
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Produto</th>
+                    <th>Marca</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-produtos"></tbody>    
+        
+        </table>
+        <a href="index.html">
+            <button class="button">Voltar</button>
+        </a>
+    </main>
+
+    <script src="js/produto.js"></script>
+</body>
+</html>

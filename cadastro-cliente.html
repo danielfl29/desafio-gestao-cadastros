@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gestão de Cadastros</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Cadastro de Clientes
+            <i class="clientes"></i>
+        </h1>
+    </header>
+    <main class="container-cadastro">
+        <form action="#" method="post" id="formulario">
+            <div class="form-campos">
+                <div class="label-input">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="ex: Ana Carla da Silva" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="cpf">CPF</label>
+                    <input type="number" name="cpf" id="cpf" placeholder="ex: 99988877710" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="ex: anasilva@email.com" class="input" required />
+                </div>
+                <div class="label-input">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" name="telefone" id="telefone" placeholder="ex: 44000000000" class="input" required />
+                </div>
+            </div>
+            <input type="submit" class="button" value="Cadastrar Cliente" />
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes"></tbody>
+
+            
+        </table>
+        <a href="index.html">
+            <button class="button">Voltar</button>
+        </a>
+    </main>
+
+    <script src="js/cliente.js"></script>
+</body>
+</html>
